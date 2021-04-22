@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		689412D826318E2F000DD01A /* SelectScanTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689412D726318E2F000DD01A /* SelectScanTypeViewController.swift */; };
+		689412DC2631956E000DD01A /* BarcodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689412DB2631956E000DD01A /* BarcodeScanViewController.swift */; };
 		68DAE67C263026C600B29866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DAE67B263026C600B29866 /* AppDelegate.swift */; };
 		68DAE67E263026C600B29866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DAE67D263026C600B29866 /* SceneDelegate.swift */; };
 		68DAE680263026C600B29866 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DAE67F263026C600B29866 /* ScannerViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		689412D726318E2F000DD01A /* SelectScanTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScanTypeViewController.swift; sourceTree = "<group>"; };
+		689412DB2631956E000DD01A /* BarcodeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanViewController.swift; sourceTree = "<group>"; };
 		68DAE678263026C600B29866 /* TextRecognizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextRecognizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DAE67B263026C600B29866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68DAE67D263026C600B29866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +66,10 @@
 			children = (
 				68DAE67B263026C600B29866 /* AppDelegate.swift */,
 				68DAE67D263026C600B29866 /* SceneDelegate.swift */,
+				689412D726318E2F000DD01A /* SelectScanTypeViewController.swift */,
 				68DAE67F263026C600B29866 /* ScannerViewController.swift */,
 				68DF75B52631386C0038FB23 /* TextViewController.swift */,
+				689412DB2631956E000DD01A /* BarcodeScanViewController.swift */,
 				68DF75B826313C1D0038FB23 /* RecognizedTextDataSource.swift */,
 				68DAE681263026C600B29866 /* Main.storyboard */,
 				68DAE684263026C900B29866 /* Assets.xcassets */,
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689412DC2631956E000DD01A /* BarcodeScanViewController.swift in Sources */,
 				68DAE680263026C600B29866 /* ScannerViewController.swift in Sources */,
+				689412D826318E2F000DD01A /* SelectScanTypeViewController.swift in Sources */,
 				68DAE67C263026C600B29866 /* AppDelegate.swift in Sources */,
 				68DAE67E263026C600B29866 /* SceneDelegate.swift in Sources */,
 				68DF75B62631386C0038FB23 /* TextViewController.swift in Sources */,

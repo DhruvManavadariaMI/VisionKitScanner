@@ -12,7 +12,7 @@
         <!--Scan Document-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScannerViewController" customModule="TextRecognizationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScannerViewController" id="BYZ-38-t0r" customClass="ScannerViewController" customModule="TextRecognizationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="926.08695652173924" y="88.392857142857139"/>
+        </scene>
+        <!--Vision-->
+        <scene sceneID="kss-Ce-eot">
+            <objects>
+                <viewController storyboardIdentifier="SelectScanTypeViewController" id="VpU-ZX-62A" customClass="SelectScanTypeViewController" customModule="TextRecognizationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eAd-sI-3gb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ehO-Wb-85C">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VpU-ZX-62A" id="TIE-jh-zHJ"/>
+                                    <outlet property="delegate" destination="VpU-ZX-62A" id="Hwj-sK-OpR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hrg-1Q-wxf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hrg-1Q-wxf" firstAttribute="trailing" secondItem="ehO-Wb-85C" secondAttribute="trailing" id="TBB-OH-6Jc"/>
+                            <constraint firstItem="ehO-Wb-85C" firstAttribute="leading" secondItem="hrg-1Q-wxf" secondAttribute="leading" id="cLc-uu-4mp"/>
+                            <constraint firstItem="ehO-Wb-85C" firstAttribute="top" secondItem="hrg-1Q-wxf" secondAttribute="top" id="tS5-IK-jy7"/>
+                            <constraint firstItem="hrg-1Q-wxf" firstAttribute="bottom" secondItem="ehO-Wb-85C" secondAttribute="bottom" id="yB5-XS-jq0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vision" id="l2T-l7-XjW"/>
+                    <connections>
+                        <outlet property="tableViewSelect" destination="ehO-Wb-85C" id="OyT-ou-MxJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEH-xq-20d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="88"/>
+        </scene>
+        <!--Barcode Scan View Controller-->
+        <scene sceneID="cHP-MM-RHg">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeScanViewController" id="jKC-P0-TrS" customClass="BarcodeScanViewController" customModule="TextRecognizationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v8n-5I-QH3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OZ5-EH-4r5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRz-B2-wGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="783"/>
         </scene>
         <!--Text View Controller-->
         <scene sceneID="GL6-WC-TYv">
@@ -99,12 +149,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XEj-9J-v8j"/>
+                        <segue destination="VpU-ZX-62A" kind="relationship" relationship="rootViewController" id="TxD-he-18T"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSN-xI-G4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15.942028985507248" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-736" y="88"/>
         </scene>
     </scenes>
     <resources>
