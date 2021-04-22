@@ -44,7 +44,7 @@
 		68DAE66F263026C600B29866 = {
 			isa = PBXGroup;
 			children = (
-				68DAE67A263026C600B29866 /* TextRecognizationDemo */,
+				68DAE67A263026C600B29866 /* VisionFrameworkDemo */,
 				68DAE679263026C600B29866 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +57,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68DAE67A263026C600B29866 /* TextRecognizationDemo */ = {
+		68DAE67A263026C600B29866 /* VisionFrameworkDemo */ = {
 			isa = PBXGroup;
 			children = (
 				68DAE67B263026C600B29866 /* AppDelegate.swift */,
@@ -70,7 +70,7 @@
 				68DAE686263026C900B29866 /* LaunchScreen.storyboard */,
 				68DAE689263026C900B29866 /* Info.plist */,
 			);
-			path = TextRecognizationDemo;
+			path = VisionFrameworkDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 68DAE673263026C600B29866 /* Build configuration list for PBXProject "TextRecognizationDemo" */;
+			buildConfigurationList = 68DAE673263026C600B29866 /* Build configuration list for PBXProject "VisionFrameworkDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -296,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8A8Z4973G;
-				INFOPLIST_FILE = TextRecognizationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VisionFrameworkDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8A8Z4973G;
-				INFOPLIST_FILE = TextRecognizationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VisionFrameworkDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		68DAE673263026C600B29866 /* Build configuration list for PBXProject "TextRecognizationDemo" */ = {
+		68DAE673263026C600B29866 /* Build configuration list for PBXProject "VisionFrameworkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68DAE68A263026C900B29866 /* Debug */,
